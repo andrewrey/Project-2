@@ -18,31 +18,63 @@
             <h1 class="name">Andrew Reynolds</h1>
             <ul class="capital">
               <li><a href="#">home</a></li>
-              <li><a href="#">portfolio</a></li>
-              <li><a href="#">contact</a></li>
+              <li><a href="#portfolio">portfolio</a></li>
+              <li><a href="#contact">contact</a></li>
             </ul>
           </nav>
-          <figure class="profile-img">
+          <figure class="profile-img clearfix">
             <img src="images/responsive-layout-profile.png" alt="profile photo image">
             <p>Hello reader, I'm currently working towards completing my front-end developer tech degree through TeamTreeHouse. This project reflects the recent lessons on responsive web design and css. Please enjoy!</p>
           </figure>
         </div>  
       </header>
       <div></div>
-      <main>
+      <main id="portfolio" class="container">
         <h3>Portfolio</h3>
-        <section>
+        <section class="marketing-page">
           <figure>
-            <img src="images/portfolio-1.png" alt="portfolio image 1">
+            <img src="images/portfolio-1.png" alt="portfolio image of marketing page">
             <h2>Marketing Page</h2>
             <p>This project shows the font page of a marketing website meant for a specific business I'm interested in.</p>
           </figure>
-         
+        </section>
+        <section class="search-page">
+          <figure>
+            <img src="images/portfolio-2.png" alt="portfolio image of search page">
+            <h2>Search Page</h2>
+            <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+          </figure>
+        </section>
+        <section class="travel-app">
+          <figure>
+            <img src="images/portfolio-3.png" alt="portfolio image of travel app">
+            <h2>Travel App</h2>
+            <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+          </figure>
+        </section>
+        <section class="map">
+          <figure>
+            <img src="images/portfolio-4.png" alt="portfolio image of map of favorite spots">
+            <h2>Map of Favorite Spots</h2>
+            <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+          </figure>
+        </section>
+        <section class="photo-gallery">
+          <figure>
+            <img src="images/portfolio-5.png" alt="photo of photo gallery page">
+            <h2>Photo Gallery</h2>
+            <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos</p>
+          </figure>
+        </section>
+        <section class="calculator">
+          <img src="images/portfolio-6.png" alt="calculator web app photo">
+          <h2>Calculator</h2>
+          <p>Someone can enter in the numbers they want, and press teh big blue button and get the result.</p>
         </section>
       </main>
     </div>
-    <footer>
-      <h2 class="capital">contact</h2>
+    <footer class="container">
+      <h2 class="capital" id="contact">contact</h2>
       <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you&#33</p>
       <ul>
         <li>Phone&#58;  &#43;1 &#40;111&#41; 555 &#45; 1234 </li>
@@ -57,8 +89,8 @@
         </ul>
         <ul class="base-list2 capital">
           <li><a href="#">home</a></li>
-          <li><a href="#">portfolio</a></li>
-          <li><a href="#">contact</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
     </div>

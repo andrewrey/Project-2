@@ -56,12 +56,12 @@ header{
 
 main {
   text-align: center;
+  background: white;
 }
 
 /* ---- Footer ---- */
 
 footer {
-  padding: 10px 1em;
   text-align: center;
 
 }
@@ -123,11 +123,20 @@ img {
 
 
 @media (min-width: 768px) {
+
+  .container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+  header p {
+    text-align: left;
+  }
     .base-list1{
       display: none;
     }
     .base-list2{
-      display: inline-block;
+      display: block;
       float: right;
     }
 
@@ -138,4 +147,17 @@ img {
       display: block;
       padding: 10px 15px;
     }
+    .profile-img img {
+      float: right;
+    }
+
+    .name{
+      display: inline-block;
+    }
+
+    .main-nav li{
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
 }
