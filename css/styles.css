@@ -47,6 +47,16 @@ li a:active {
 
 }
 
+/* ---- Header ---- */
+
+header{
+  text-align: center;
+}
+/* ---- Main ---- */
+
+main {
+  text-align: center;
+}
 
 /* ---- Footer ---- */
 
@@ -68,8 +78,12 @@ footer {
   float: left;
 }
 
-.base-nav .base-list {
+.base-nav .base-list1 {
   float: right;
+}
+
+.base-list2 {
+  display: none;
 }
 /* ---- Layout Containers ---- */
 
@@ -84,6 +98,11 @@ footer {
 }
 
 /* ---- Page Elements ---- */
+
+img {
+  width: 200px;
+  
+}
 
 .capital {
   text-transform: uppercase;
@@ -101,3 +120,22 @@ footer {
   Media Queries
 ==================================== */
 
+
+
+@media (min-width: 768px) {
+    .base-list1{
+      display: none;
+    }
+    .base-list2{
+      display: inline-block;
+      float: right;
+    }
+
+    .base-list2 li {
+      display: inline-block;
+    }
+    .base-list2 a {
+      display: block;
+      padding: 10px 15px;
+    }
+}
