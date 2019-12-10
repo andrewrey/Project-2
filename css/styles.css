@@ -73,7 +73,9 @@ main {
 section:nth-of-type(even) {
   background-color: #fab387;
 }
-
+section {
+  min-height: 362px;
+}
 main {
   text-align: center;
   background: white;
