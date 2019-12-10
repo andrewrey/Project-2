@@ -59,6 +59,10 @@ main {
   background: white;
 }
 
+figure{
+  margin: 0;
+} 
+
 /* ---- Footer ---- */
 
 footer {
@@ -100,7 +104,8 @@ footer {
 /* ---- Page Elements ---- */
 
 img {
-  width: 200px;
+  width: 100%;
+  max-width: 300px;
   
 }
 
@@ -108,7 +113,9 @@ img {
   text-transform: uppercase;
 }
 
-
+section {
+  vertical-align: top;
+}
 /* ---- Float Clearfix ---- */
 .clearfix::after {
 		content: " ";
@@ -126,8 +133,12 @@ img {
 
   .container {
     width: 90%;
-    max-width: 1150px;
+    max-width: 735px;
     margin: 0 auto;
+  }
+  .col {
+    width:49%;
+    display: inline-block
   }
   header p {
     text-align: left;
@@ -160,4 +171,19 @@ img {
       margin-right: 10px;
     }
     
+}
+
+@media (min-width: 1024px) {
+  .col {
+    width: 28%;
+  }
+  .main-nav h1{
+    float: left;
+  }
+  .main-nav ul {
+    float: right;
+  }
+  .container{
+    max-width: 1050px;
+  }
 }
