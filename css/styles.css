@@ -18,6 +18,14 @@ body {
 a {
   text-decoration: none;
 }
+li a{
+  transition: all .2s;
+}
+li a:hover {
+  background-color: lightpink;
+  transform: scale(1.5);
+}
+
 li a:active {
   background-color: #96E1F9;
 }
@@ -46,7 +54,10 @@ li a:active {
   margin-bottom: 15px;
 
 }
-
+.base-nav a {
+  color: #7E7ED6;
+  display: block;
+}
 /* ---- Header ---- */
 
 header{
